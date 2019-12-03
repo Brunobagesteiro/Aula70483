@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Meu_projeto_sozinho
 {
@@ -10,9 +7,23 @@ namespace Meu_projeto_sozinho
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Bem vindo galera");
 
-            Console.WriteLine("tchau galera");
+            List<string>
+                minhaLista = new List<string>
+            {
+                   
+                "Bruno",
+                "juca",
+                "junica",
+                "Ariosto",
+                "roberval"
+            };
+
+            minhaLista.ForEach(x => Console.WriteLine(x));
+            
+           
+                
+
 
             Console.ReadKey(true);
         }
