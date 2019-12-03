@@ -21,6 +21,9 @@ namespace listaDeCarro
 
             };
 
+            minhaListaDeCarro.ForEach(x => Console.WriteLine(x));
+
+            Console.ReadKey(true);
 
         }
     }
