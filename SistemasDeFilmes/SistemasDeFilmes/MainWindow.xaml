@@ -1,0 +1,28 @@
+﻿<Window x:Class="SistemasDeFilmes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SistemasDeFilmes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="Button" Content="Enter" HorizontalAlignment="Left" Margin="681,10,0,0" VerticalAlignment="Top" Width="101" Height="38" FontWeight="Bold" FontSize="18" Click="Button_Click">
+            <Button.Effect>
+                <DropShadowEffect Color="#FF06E839"/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="tbxFiltro" HorizontalAlignment="Left" Height="38" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontWeight="Bold" FontSize="18">
+            <TextBox.Effect>
+                <DropShadowEffect Color="#FF45A800"/>
+            </TextBox.Effect>
+        </TextBox>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="False" HorizontalAlignment="Left" Height="310" Margin="29,85,0,0" VerticalAlignment="Top" Width="753">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding}" 
+                                Foreground="Black" Width="60" Header="Nome" IsReadOnly="false" />
+            </DataGrid.Columns>
+        </DataGrid>
+
+    </Grid>
+</Window>

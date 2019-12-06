@@ -1,0 +1,48 @@
+﻿<Window x:Class="iniciandoWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:iniciandoWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="239*"/>
+            <ColumnDefinition Width="124*"/>
+            <ColumnDefinition Width="129*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Effect>
+            <DropShadowEffect/>
+        </Grid.Effect>
+        <Button Content="Filtrar" Margin="1,10,10,0" Height="37" VerticalAlignment="Top" Click="Button_Click" Grid.Column="2">
+            <Button.Effect>
+                <DropShadowEffect Color="#FFD82E13"/>
+            </Button.Effect>
+        </Button>
+        <TextBox x:Name="TbxFiltro" FontFamily="Monotype Corsiva" FontSize="24" Margin="10,10,2,0" TextWrapping="Wrap" Text="" TextDecorations="Underline" Height="37" VerticalAlignment="Top">
+            <TextBox.Effect>
+                <DropShadowEffect Color="#FFF51E1E"/>
+            </TextBox.Effect>
+        </TextBox>
+        <DataGrid x:Name="dataGrid"  AutoGenerateColumns="False" Margin="23,87,10,10" Grid.ColumnSpan="3">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding}" 
+                                Foreground="Black" Width="60" Header="Nome" IsReadOnly="false" />
+            </DataGrid.Columns>
+
+            <DataGrid.Effect>
+                <DropShadowEffect Color="#FFF51111"/>
+            </DataGrid.Effect>
+        </DataGrid>
+        <ComboBox x:Name="cbxFiltro" Margin="10,10,13,0" VerticalAlignment="Top" Height="37" Grid.Column="1" SelectedIndex="0" FontSize="22">
+            <ComboBox.Effect>
+                <DropShadowEffect Color="#FFF31515"/>
+            </ComboBox.Effect>
+            <ListBoxItem Content="Ordenar"/>
+            <ListBoxItem Content="Filtro por nome"/>
+            <ListBoxItem Content="Ordenar por Tamanho" /> 
+        </ComboBox>
+    </Grid>
+</Window>
