@@ -1,0 +1,17 @@
+﻿<Window x:Class="classeCarros.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:classeCarros"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,62,0,23" Width="772"/>
+        <Button Content="Cadastrar" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="119" Height="35" Click="Button_Click"/>
+        <TextBox x:Name="tbxModelo" HorizontalAlignment="Left" Height="37" Margin="134,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="161"/>
+        <TextBox x:Name="tbxMarca" HorizontalAlignment="Left" Height="35" Margin="325,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="216"/>
+        <TextBox x:Name="tbxAno" HorizontalAlignment="Left" Height="35" Margin="588,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="196"/>
+
+    </Grid>
+</Window>
