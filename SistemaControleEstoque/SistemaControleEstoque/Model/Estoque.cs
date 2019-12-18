@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SistemaControleEstoque.Model
 {
-    public class Estoque
+    public class Estoque : ControleUsuario
     {
         public int Id { get; set; }
 
@@ -14,18 +14,7 @@ namespace SistemaControleEstoque.Model
 
         public int Quantidade { get; set; }
 
-        public decimal Valor { get; set; }
-
-        public bool Ativo { get; set; }
-
-        public int UsuarioCriacao { get; set; }
-
-        public int UsuarioAlteracao { get; set; }
-
-        public DateTime DataCriaca { get; set; }
-
-        public DateTime DataAlteracao { get; set; }
-
+        public decimal Valor { get; set; }     
 
     }
 }

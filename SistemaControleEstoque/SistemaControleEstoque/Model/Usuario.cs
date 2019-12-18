@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SistemaControleEstoque.Model
 {
-   public class Usuario
+   public class Usuario : ControleUsuario
    {
         [Key]
         public int Id { get; set; }
